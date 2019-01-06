@@ -1,0 +1,16 @@
+{
+  "name": "health",
+  "authors": [
+    "sagsoz06 <designer@visualturk.net>"
+  ],
+  "description": "Health Website",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
