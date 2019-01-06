@@ -20,6 +20,13 @@
 {!! Theme::script("js/wow.min.js") !!}
 {!! Theme::script("js/custom.js") !!}
 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/unveil/1.3.0/jquery.unveil.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $("img").unveil();
+    });
+</script>
+
 @stack('css_inline')
 @stack('scripts')
 @stack('js-inline')
