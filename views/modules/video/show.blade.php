@@ -12,7 +12,7 @@
                 <div class="row">
                     <div class="col-md-12 wow bounceInLeft" data-wow-delay=".2s">
                         <div class="embed-responsive embed-responsive-16by9">
-                            {!! $media->embed['code'] ?? null !!}
+                            {!! $media->present()->code !!}
                         </div>
                         <h3 class="ui-title-block ui-title-block_small" style="font-size:14px;">{{ $media->title }}</h3>
                         <div class="description">

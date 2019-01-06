@@ -2,23 +2,23 @@
 
 @section('content')
 
-    @include('partials/pages/home/slider')
+    @themeSlide('anasayfa','slide')
 
     @pageFindByOptions('settings->show_page_home', 'services')
 
-    @include('partials/pages/home/appointment')
+    @include('appointment::widgets.home.appointment')
 
     @blogLatestPosts(8, 'home.latest')
 
     {{--@instagramPosts('bugrabuyrukcu', 3600, 12)--}}
 
-    @include('partials/pages/home/banner-contact')
+    @include('contact::widgets.home.call')
 
-    {{--@include('partials/pages/home/video-article')--}}
+    @include('partials/pages/home/video-article')
 
-    @include('partials/pages/home/newsletter')
+    @include('partials.components.newsletter')
 
-    {{--@include('partials/pages/home/reviews')--}}
+    @guestbookLatest(6, 'reviews')
 
 @endsection
 

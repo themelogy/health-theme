@@ -16,9 +16,9 @@
                                 <div class="link_on-youtube" style="margin-bottom: 0;">
                                     <a class="inline" href="#data{{ $media->id }}"><span class="btn bg-color_second"><i class="icon icon-camcorder"></i></span></a>
                                     <div style="display:none; padding: 0;">
-                                        <div class="embed-responsive" id="data{{ $media->id }}" style="padding: 0;">{!! $media->embed['code'] !!}</div>
+                                        <div class="embed-responsive" id="data{{ $media->id }}" style="padding: 0;">{!! $media->present()->code !!}</div>
                                     </div>
-                                    <img src="{{ $media->present()->embedImage(600,325,'fit',80) }}" alt="{{ $media->title }}"/>
+                                    <img src="{{ $media->present()->firstImage(600,325,'fit',80) }}" alt="{{ $media->title }}"/>
                                 </div>
                                 <h3 class="ui-title-block ui-title-block_small" style="font-size:14px;"><a href="{{ $media->url }}">{{ $media->title }}</a></h3>
                             </div>

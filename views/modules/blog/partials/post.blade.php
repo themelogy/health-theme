@@ -8,7 +8,7 @@
             @if($file = $post->files()->first())
                 <div class="hover__figure"><img src="{{ \Imagy::getImage($file->filename, 'blogIndex', ['width' => 250, 'height' => 250, 'mode' => 'fit', 'quality' => 100]) }}" height="320" width="770" alt="Foto"></div>
             @endif
-            <div class="entry-autor"> <img src="{{ Theme::url('media/80x80/Bugra_Buyrukcu_80x80.jpg') }}" height="82" width="80" alt="Autor"> </div>
+            <div class="entry-autor"> <img src="{{ Theme::url('media/80x80/Bugra_Buyrukcu_80x80.jpg') }}" height="82" width="80" alt="{{ setting('theme::company-name') }} Foto"> </div>
             <h2 class="entry-title">{{ $post->title }}</h2>
             <ul class="entry-meta unstyled clearfix">
                 <li>
